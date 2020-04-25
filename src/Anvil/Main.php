@@ -66,7 +66,7 @@ class Main extends PluginBase implements Listener
     }
     
     public function onDisable(){
-        $this->getLogger()->inf(TextFormat::RED."CustomAnvilUI Disabled!");
+        $this->getLogger()->info(TextFormat::RED."CustomAnvilUI Disabled!");
     }
     
     public function openForm(Player $player) {
