@@ -45,16 +45,6 @@ class Main extends PluginBase implements Listener
 {
 
     public function onEnable(){
-        if (is_null($this->getServer()->getPluginManager()->getPlugin("EconomyAPI"))) {
-            $this->getLogger()->error(TextFormat::RED."You need to install EconomyAPI that the plugin work!");
-            $this->getServer()->getPluginManager()->disablePlugin($this);
-            return;
-        }
-        if (is_null($this->getServer()->getPluginManager()->getPlugin("FormAPI"))) {
-            $this->getLogger()->error(TextFormat::RED."You need to install FormAPI that the plugin work!");
-            $this->getServer()->getPluginManager()->disablePlugin($this);
-            return;
-        }
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
         
