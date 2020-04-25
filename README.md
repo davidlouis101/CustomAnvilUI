@@ -14,7 +14,7 @@ If you encounter Bugs do not forget to message me on Discord: DaRealAqua#1987 or
 - EconomyAPI
 - FormAPI
 
-### Authors:
+### Author:
 - DaRealAqua
 
 ### Socials:
