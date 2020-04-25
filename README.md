@@ -31,6 +31,6 @@ If you encounter Bugs do not forget to message me on Discord: DaRealAqua#1987 or
 - IP: Soon
 - PORT: Soon
 - Status: Maintenance
-- Discord Server: https://discord.io/XeroxNetworks
+- Discord Server: https://discord.io/XeroxNetwork
 --------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------
