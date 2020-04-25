@@ -12,27 +12,27 @@ Main:
 #
 #
 Repair:
-  ShowMyMoney: "You have: "
+  ShowMyMoney: "Your money: "
   Cost: "100"
   Title: "Repair form"
   Content: "text here"
   Button: "Tap to repair"
   Back: "Go Back to Main Menu"
 Repair-Message:
-  NoMoney: "You need "
-  HoldItem: "Hold item in hand"
-  succesfully: "you succesfully repaired your item"
+  NoMoney: "[!] You need "
+  HoldItem: "[!] Hold item in hand"
+  succesfully: "[!] You succesfully repaired your item"
 ##########################################################
 #
 # Rename System (2)
 #
 Rename:
-  ShowMyMoney: "You have: "
+  ShowMyMoney: "Your money: "
   Cost: "100"
   Title: "You rename: "
   Content: "Renaming cost: "
 Rename-Message:
-  NoMoney: "You have enought money. You need"
-  HoldItem: "Hold item in hand"
-  succesfully: "Item renamed in "
+  NoMoney: "[!] You have enought money. You need"
+  HoldItem: "[!] Hold item in hand"
+  succesfully: "[!] Item renamed in "
 ...
