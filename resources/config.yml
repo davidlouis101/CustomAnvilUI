@@ -1,0 +1,38 @@
+---
+# Add Title Message & or § for color
+Main:
+  Title: "Select"
+  Content: "Text here"
+  Repair-Button: "Repair"
+  Rename-Button: "Rename"
+  Exit-Button: "Exit The Main Menu"
+##########################################################
+#
+# Repair System (1)
+#
+#
+Repair:
+  ShowMyMoney: "You have: "
+  Cost: "100"
+  Title: "Repair form"
+  Content: "text here"
+  Button: "Tap to repair"
+  Back: "Go Back to Main Menu"
+Repair-Message:
+  NoMoney: "You need "
+  HoldItem: "Hold item in hand"
+  succesfully: "you succesfully repaired your item"
+##########################################################
+#
+# Rename System (2)
+#
+Rename:
+  ShowMyMoney: "You have: "
+  Cost: "100"
+  Title: "You rename: "
+  Content: "Renaming cost: "
+Rename-Message:
+  NoMoney: "You have enought money. You need"
+  HoldItem: "Hold item in hand"
+  succesfully: "Item renamed in "
+...
