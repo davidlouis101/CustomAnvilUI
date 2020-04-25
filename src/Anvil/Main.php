@@ -1,27 +1,41 @@
 <?php
 
 namespace Anvil;
+
 use Anvil\EventListener;
+
+//plugin
 use pocketmine\plugin\PluginBase;
+
+//event
 use pocketmine\event\Listener;
+
+//economyapi
 use onebone\economyapi\EconomyAPI;
+
+//utils
 use pocketmine\utils\TextFormat;
+
+//formapi
 use jojoe77777\FormAPI\SimpleForm;
 use jojoe77777\FormAPI\CustomForm;
 use jojoe77777\FormAPI\Form;
 use jojoe77777\FormAPI\ModalForm;
 use jojoe77777\FormAPI\FormAPI;
+
+//item
 use pocketmine\item\Item;
 use pocketmine\item\Tool;
 use pocketmine\item\Armor;
+
+//others
 use pocketmine\Server;
 use pocketmine\Player;
 
 class Main extends PluginBase implements Listener
 {
 
-    public function onEnable(): void
-    {
+    public function onEnable(){
         if (is_null($this->getServer()->getPluginManager()->getPlugin("EconomyAPI"))) {
             $this->getLogger()->error(TextFormat::RED."You need to install EconomyAPI that the plugin work.");
             $this->getServer()->getPluginManager()->disablePlugin($this);
