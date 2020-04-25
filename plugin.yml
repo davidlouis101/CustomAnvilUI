@@ -4,5 +4,5 @@ version: 2.0.0
 api: [3.0.0, 4.0.0, 3.0.9]
 main: Anvil\Main
 author: DaRealAqua
-description: This plugin is usefull for SkyBlock server!
+description: This plugin is usefull for SkyBlock,Factions,HCF servers!
 ...
