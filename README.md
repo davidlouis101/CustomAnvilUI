@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------
-This is a repair and item rename system. Click on an anvil and it will open a UI menu
+This is a repair and item rename system. Click on an anvil and it will open a UI menu.
 
 If you encounter Bugs do not forget to message me on Discord: DaRealAqua#1987
 
