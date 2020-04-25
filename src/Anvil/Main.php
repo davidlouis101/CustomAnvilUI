@@ -23,15 +23,15 @@ class Main extends PluginBase implements Listener
     public function onEnable(): void
     {
         if (is_null($this->getServer()->getPluginManager()->getPlugin("EconomyAPI"))) {
-            $this->getLogger()->error("You need to install EconomyAPI to work");
+            $this->getLogger()->error("You need to install EconomyAPI that the plugin work.");
             $this->getServer()->getPluginManager()->disablePlugin($this);
             return;
         }
-        /*if (is_null($this->getServer()->getPluginManager()->getPlugin("EconomyAPI"))) {
-            $this->getLogger()->error("in order to use EnchantUI you need to install EconomyAPI.");
+        if (is_null($this->getServer()->getPluginManager()->getPlugin("FormAPI"))) {
+            $this->getLogger()->error("You need to install FormAPI that the plugin work.");
             $this->getServer()->getPluginManager()->disablePlugin($this);
             return;
-        }*/
+        }
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
         $this->getLogger()->info(TextFormat::LIGHT_PURPLE."CustomAnvilUI Enabled");
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
