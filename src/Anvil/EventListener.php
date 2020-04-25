@@ -1,11 +1,19 @@
 <?php
+
 namespace Anvil;
 
+use Anvil\Main;
+
+//event
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\event\Listener;
+
+//item
 use pocketmine\Item;
+
+//block
 use pocketmine\block\Anvil;
-use Anvil\Main;
+
 Class EventListener implements Listener{
 
     /** @var Main */
@@ -18,11 +26,11 @@ Class EventListener implements Listener{
     /**
      * @param PlayerInteractEvent $ev
      */
-    public function onInteract(PlayerInteractEvent $ev){
-        if($ev->getAction() !== PlayerInteractEvent::RIGHT_CLICK_BLOCK) return;
-        if($ev->getBlock() instanceof Anvil){
-            $ev->setCancelled();
-            $this->plugin->openForm($ev->getPlayer());
+    public function onInteract(PlayerInteractEvent $event){
+        if($event->getAction() !== PlayerInteractEvent::RIGHT_CLICK_BLOCK) return;
+        if($event->getBlock() instanceof Anvil){
+            $event->setCancelled();
+            $this->plugin->openForm($event->getPlayer());
         }
     }
 }
