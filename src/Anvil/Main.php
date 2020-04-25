@@ -46,14 +46,20 @@ class Main extends PluginBase implements Listener
             $this->getServer()->getPluginManager()->disablePlugin($this);
             return;
         }
-        $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
-        $this->getLogger()->info(TextFormat::LIGHT_PURPLE."CustomAnvilUI Enabled");
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
+        $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
+        
+        $this->getLogger()->info(TextFormat::GREEN."CustomAnvilUI Enabled");
+        
         @mkdir($this->getDataFolder());
         $this->saveDefaultConfig();
         $this->cfg = $this->getConfig()->getAll();
     }
-
+    
+    public function onDisable(){
+        $this->getLogger()->inf(TextFormat::RED."CustomAnvilUI Disabled!");
+    }
+    
     public function openForm(Player $player) {
 
 
