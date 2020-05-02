@@ -164,7 +164,7 @@ class Main extends PluginBase implements Listener
         $mymoney = EconomyAPI::getInstance()->myMoney($sender);
         $form->setTitle($this->getConfig()->getNested("Rename.Title").$sender->getInventory()->getItemInHand()->getName());
         $form->addLabel($this->getConfig()->getNested("Rename.ShowMyMoney").$mymoney."\n".$this->getConfig()->getNested("Rename.Content").$this->getConfig()->getNested("Rename.Cost"));
-        $form->addInput(TextFormat::GRAY."Rename Item:", "Add name here");
+        $form->addInput(TextFormat::GRAY."Add the new name here:", "Add name here");
         $form->sendToPlayer($sender);
     }
 }
