@@ -154,7 +154,7 @@ class Main extends PluginBase implements Listener
                 EconomyAPI::getInstance()->reduceMoney($sender, $this->getConfig()->getNested("Rename.Cost"));
                 $item->setCustomName($data[1]);
                 $sender->getInventory()->setItemInHand($item);
-                $sender->sendMessage($this->getConfig()->getNested("Repair-Message.succesfully")." ".$data[1]);
+                $sender->sendMessage($this->getConfig()->getNested("Rename-Message.succesfully")." ".$data[1]);
             } else {
                 $sender->sendMessage($this->getConfig()->getNested("Rename-Message.NoMoney")." ".$this->getConfig()->getNested("Rename.Cost"));
             }
