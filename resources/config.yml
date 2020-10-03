@@ -17,7 +17,7 @@ Repair:
   Content: "text here"
   Button: "Tap to repair"
   Back: "Go Back to Main Menu"
-Repair-Message:
+  Repair-Message: "Repair"
   NoMoney: "[!] You need "
   HoldItem: "[!] Hold item in hand"
   succesfully: "[!] You succesfully repaired your item"
