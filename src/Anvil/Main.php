@@ -70,10 +70,8 @@ class Main extends PluginBase implements Listener
             switch ($data) {
                 case 0:
                     $this->openRepair($player);
-                    $player->sendMessage($this->getConfig()->getNested("Open.Repair"));
                     break;
                 case 1:
-                    $player->sendMessage($this->getConfig()->getNested("Open.Rename"));
                     $this->openRename($player);
                     break;
 
