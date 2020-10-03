@@ -3,8 +3,6 @@
 Main:
   Title: "Select"
   Content: "Text here"
-  Repair-Button: "Repair"
-  Rename-Button: "Rename"
   Exit-Button: "Exit The Main Menu"
 ##########################################################
 #
