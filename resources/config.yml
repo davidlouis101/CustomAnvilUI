@@ -11,7 +11,6 @@ Main:
 #
 Repair:
   ShowMyMoney: "Your money: "
-  OpenRepair: "Message when Open RepairForm"
   Cost: "100"
   Title: "Repair form"
   Content: "text here"
@@ -26,7 +25,6 @@ Repair:
 # Rename System (2)
 #
 Rename:
-  OpenRename: "Message when Open RenameForn"
   ShowMyMoney: "Your money: "
   Cost: "100"
   Title: "You rename: "
