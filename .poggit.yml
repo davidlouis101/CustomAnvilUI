@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/davidlouis101/CustomAnvilUI
+build-by-default: true
+branches:
+- master
+projects:
+  CustomAnvilUI:
+    path: ""
+...
