@@ -38,6 +38,7 @@ Class EventListener implements Listener{
      */
     public function onInteract(PlayerInteractEvent $event){
         if($event->getAction() !== PlayerInteractEvent::RIGHT_CLICK_BLOCK) return;
+        if($event->getAction() !== PlayerInteractEvent::LEFT_CLICK_BLOCK) return;
         if($event->getBlock() instanceof Anvil){
             $event->setCancelled();
             $this->plugin->openForm($event->getPlayer());
