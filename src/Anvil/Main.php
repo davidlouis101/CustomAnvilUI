@@ -70,8 +70,10 @@ class Main extends PluginBase implements Listener
             switch ($data) {
                 case 0:
                     $this->openRepair($player);
+                    $player->sendMessage($this->getConfig()->getNested("Open.Repair"));
                     break;
                 case 1:
+                    $player->sendMessage($this->getConfig()->getNested("Open.Rename"));
                     $this->openRename($player);
                     break;
 
@@ -122,7 +124,7 @@ class Main extends PluginBase implements Listener
                         }
                         return true;
                     } else {
-                        $player->sendMessage($this->getConfig()->getNested("Repair-Message.NoMoney").$this->getConfig()->getNested("Repair.Cost")." money");
+                        $player->sendMessage($this->getConfig()->getNested("Repair-Message.NoMoney").$this->getConfig()->getNested("Repair.Cost");
                     }
                     break;
                 case 1:
@@ -136,7 +138,7 @@ class Main extends PluginBase implements Listener
         );
         $mymoney1 = EconomyAPI::getInstance()->myMoney($player);
         $form->setTitle($this->getConfig()->getNested("Repair.Title"));
-        $form->setContent($this->getConfig()->getNested("Repair.Content")."\n".$this->getConfig()->getNested("Repair.ShowMyMoney").$mymoney1);
+        $form->setContent($this->getConfig()->getNested("Repair.Content")."\n".$this->getConfig()->getNested("Repair.ShowMyMoney"). $mymoney1);
         $form->addButton($this->getConfig()->getNested("Repair.Button"));
         $form->addButton($this->getConfig()->getNested("Repair.Back"));
         $form->sendToPlayer($player);
@@ -164,7 +166,7 @@ class Main extends PluginBase implements Listener
         $mymoney = EconomyAPI::getInstance()->myMoney($sender);
         $form->setTitle($this->getConfig()->getNested("Rename.Title").$sender->getInventory()->getItemInHand()->getName());
         $form->addLabel($this->getConfig()->getNested("Rename.ShowMyMoney").$mymoney."\n".$this->getConfig()->getNested("Rename.Content").$this->getConfig()->getNested("Rename.Cost"));
-        $form->addInput(TextFormat::GRAY."Add the new name here:", "Add name here");
+        $form->addInput(TextFormat::GOLD."Name:", "§a§lNamen von item hierhin");
         $form->sendToPlayer($sender);
     }
 }
