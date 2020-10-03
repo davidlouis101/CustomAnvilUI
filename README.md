@@ -1,8 +1,9 @@
 --------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------
 This is a repair and item rename system. Click on an anvil and it will open a UI menu.
-
+UI
 If you encounter Bugs do not forget to message me on Discord: DaRealAqua#1987 or join my discord server!
+## Plugin Fixed by davidlouis101 ##
 
 ### Plugin Perks:
 - Repair Item
